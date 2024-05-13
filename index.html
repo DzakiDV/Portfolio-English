@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio Dzaki Dimas Viaski (English)</title>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" alt="" class="logo">
+        <ul id="sidemenu">
+          <li> <a href="#header">Home</a></li>
+          <li> <a href="#about">About Me</a></li>
+          <li> <a href="#portfolio">Portfolio</a></li>
+          <li> <a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Junior Game Developer</p>
+        <h1>Hi, I'm <span>Dzaki</span> Dimas <br> From SMKN 11 Semarang</h1>
+      </div>
+    </div>
+  </div>
+  <!-- ----------------tentang saya--------------------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.png" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-titles">About Me</h1>
+          <p>
+          <p style="font-weight: bold;font-size: 20px;">
+            Name : Dzaki Dimas Viaski <br>
+            School : SMK Negeri 11 Semarang <br> <br>
+          </p>
+
+          I am a high school student currently in the 11th grade, pursuing my education in the Game and Interactive Media (GIM) field. 
+          Since my middle school years, I have been captivated by the world of technology. Specifically, I have developed a strong interest in programming. 
+          For me, programming is not just an activity but a passion that fills my days. I feel truly alive when facing challenges in programming, 
+          and I am always inspired to continue learning and delving deeper into the intricacies of the programming world.
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Unity 2D</span> <br> Creating a 2D game project using Unity software.</li>
+              <li><span>Unity 3D</span> <br> Creating a 2D game project using Unity software.</li>
+              <li><span>Unity Programming</span> <br> The C# programming language for Unity.</li>
+              <li><span>Basic Frontend Web</span> <br> Understanding the basics of Frontend Web (HTML, CSS, JS).</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <p>-</p>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li> SMK NEGERI 11 SEMARANG (GIM Department)</li>
+            </ul>
+          </div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!------------- PORTOFOLIO ------------>
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-titles">Portfolio</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.png">
+          <div class="layer">
+            <h3>"Doctor Stickman"</h3>
+            <p>Action-themed 2D Mobile game with a Stickman theme. Download through the button below.</p>
+            <a href="https://drive.google.com/drive/folders/1rpSHEUfYy2HYrOhMKIAshvw3yM3nZFiz?usp=sharing"><i
+                class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.png">
+          <div class="layer">
+            <h3>"The Story From Nusantara"</h3>
+            <p>A Short Story-themed 2D Mobile game with elements inspired by competitions held on the Tujuhbelasan event. Download through the button below.</p>
+            <a href="https://drive.google.com/drive/folders/1xQNUjVXZJLfRorcrwotRrWtumGa5-sJl?usp=sharing"><i
+                class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.png">
+          <div class="layer">
+            <h3>"My Cousin..."</h3>
+            <p>PC 3D Horror Story-themed game. Download through the button below</p>
+            <a href="https://drive.google.com/drive/folders/1u9S66HxL8wr9WPR44vQVbYMelHkYdB7L?usp=drive_link"><i
+                class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ---------------------------------------contact --------------------------- -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-titles">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> dzakidv@gmail.com</p>
+          <p><i class="fa-solid fa-square-phone"></i> 08974385497</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/dzaki.dav"><i class="fa-brands fa-facebook"></i></a>
+            <a href="mailto:dzakidv@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://instagram.com/dzakidv?igshid=MmVlMjlkMTBhMg=="><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/628974385497"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+          <a href="cv-dzaki.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Send</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright © Dzaki 2023</p>
+  </div>
+
+
+</body>
+
+
+
+<script src="https://kit.fontawesome.com/6a24ebe967.js" crossorigin="anonymous"></script>
+<script>
+
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname) {
+    for (tablink of tablinks) {
+      tablink.classList.remove("active-link");
+    }
+    for (tabcontent of tabcontents) {
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+
+
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwrMvnZdgi2q0nbz34pSRI2frV94fa0Q0rSYjqI2TNg2rzFmBzeeVd6tb6b7arjM9Ip/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, {method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Pesan berhasil dikirim"
+        setTimeout(function () {
+          msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu() {
+    sidemenu.style.right = "0";
+  }
+  function closemenu() {
+    sidemenu.style.right = "-200px";
+  }
+</script>
+
+<script>
+  document.addEventListener('scroll', function () {
+    var scrollPosition = window.scrollY;
+    var header = document.getElementById('header');
+    header.style.backgroundPositionY = -scrollPosition * 0.5 + 'px';
+  });
+</script>
+
+</html>
